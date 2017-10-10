@@ -1,0 +1,110 @@
+import java.io.* ;
+
+public class LibaLoops
+{
+  public static void main (String[] args) throws IOException
+  {
+    BufferedReader objReader = new BufferedReader (new InputStreamReader (System.in));
+    
+    System.out.print ("Please enter a whole number as the multiplier"); //asks user for first number
+    int multiplier = Integer.parseInt ((objReader.readLine ())); 
+    
+    System.out.print ("Please enter a whole number as the multiplicand"); // asks user for second number
+    int multiplicand = Integer.parseInt ((objReader.readLine ())); 
+    
+    int product = multiplier * multiplicand; // formula for the product of the multiplier and multicand
+    
+    // ouputs what the user input as the multiplier and multicand
+    System.out.println ("Multiplier: " + multiplier);
+    System.out.println ("Multiplicand: " + multiplicand);
+    System.out.println ();
+    
+    while (multiplier != 0 && multiplicand != 0) 
+    { 
+      if (multiplicand % 2 != 0) // removes any even numbers by the remainder
+      { 
+        System.out.println (multiplier + " " + multiplicand);  
+      } 
+      else if (multiplier % 2 == 1) // removes any odd numbers by the remainder 
+      {       
+        System.out.println (multiplier + "  " + multiplicand);  
+      }
+      multiplier *= 2;// doubles the multiplier
+      multiplicand /= 2;// divides multiplicand by two
+    }
+    System.out.println ("Product: " + product); //putputs the product of the multiplier and multiplicand
+    {
+      // asks user for another pair of numbers
+      System.out.print ("Please enter a whole number as the multiplier"); //asks user for first number
+      multiplier = Integer.parseInt ((objReader.readLine ())); 
+      
+      System.out.print ("Please enter a whole number as the multiplicand"); // asks user for second number
+      multiplicand = Integer.parseInt ((objReader.readLine ())); 
+      
+      product = multiplier * multiplicand; // formula for the product of the multiplier and multicand
+      
+      // ouputs what the user input as the multiplier and multicand
+      System.out.println ("Multiplier: " + multiplier);
+      System.out.println ("Multiplicand: " + multiplicand);
+      System.out.println ();
+      
+      while (multiplier <= 0 && multiplicand < 0)
+      { 
+        if (multiplicand % 2 == 0)// 
+        { 
+          System.out.println (multiplier + "  " + multiplicand);  
+        } 
+        else if (multiplier % 2 == 0)// 
+        {       
+          System.out.println (multiplier + "  " + multiplicand);  
+        }
+        multiplier *= 2;// doubles the multiplier
+        multiplicand /= 2;// divides multiplicand by two
+      }
+      System.out.println ("Values must not be negative");
+      {
+        
+// asks user for another set of two numbers as the multiplier and multiplicand
+        System.out.println ("Please enter a whole number as the multiplier");
+        int multiplier3 = Integer.parseInt ((objReader.readLine ())); 
+        
+        System.out.println ("Please enter a whole number as the multiplicand");
+        int multiplicand3 = Integer.parseInt ((objReader.readLine ())); 
+        
+        int product3 = multiplier3 * multiplicand3;
+        
+        System.out.println ("Multiplier: " + multiplier3);
+        System.out.println ("Multiplicand: " + multiplicand3);
+        
+        while (multiplier3 != 0 && multiplicand3 != 0)
+        { 
+          if (multiplicand3 % 2 != 0)// 
+          { 
+            System.out.println (multiplier3 + "  " + multiplicand3);  
+          } 
+          else if (multiplier3 % 2 < 0)// 
+          {       
+            System.out.println (multiplier3 + "  " + multiplicand3);  
+          }
+          multiplier3 *= 2;// doubles the multiplier
+          multiplicand3 /= 2;// divides multiplicand by two
+        }
+        System.out.println ("Product: " + product3);  
+      }
+      System.out.println ("Please enter a whole number as the multiplier");// asks user for a number as the multiplier
+      int multiplier3 = Integer.parseInt ((objReader.readLine ())); 
+      
+      System.out.println ("Please enter a whole number as the multiplicand");// asks user for a number as the multiplicand
+      int multiplicand3 = Integer.parseInt ((objReader.readLine ())); 
+      
+      int product3 = multiplier3 * multiplicand3;// formula
+      
+      System.out.println ("Multiplier: " + multiplier3); //outputs multiplier
+      System.out.println ("Multiplicand: " + multiplicand3); // outputs multiplicand
+    }
+  }
+}
+
+
+
+
